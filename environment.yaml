@@ -1,0 +1,38 @@
+# File modified by authors of InstructPix2Pix from original (https://github.com/CompVis/stable-diffusion).
+# See more details in LICENSE.
+
+name: testp
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - python
+  - pip
+  - cudatoolkit
+  - pytorch
+  - torchvision
+  - numpy
+  - pip:
+    - albumentations
+    - datasets
+    - diffusers
+    - opencv-python
+    - pudb
+    - invisible-watermark
+    - imageio
+    - imageio-ffmpeg
+    - pytorch-lightning
+    - omegaconf
+    - test-tube>=0.7.5
+    - streamlit>=0.73.1
+    - einops
+    - torch-fidelity
+    - transformers
+    - torchmetrics
+    - kornia
+    - -e git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers
+    - -e git+https://github.com/openai/CLIP.git@main#egg=clip
+    - openai
+    - gradio
+    - seaborn
+    - git+https://github.com/crowsonkb/k-diffusion.git
